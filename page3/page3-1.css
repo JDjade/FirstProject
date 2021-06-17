@@ -1,0 +1,198 @@
+@font-face {
+    font-family: 'SEBANG_Gothic_Regular';
+    src: local('Sebang/SEBANG Gothic OTF.otf'),
+    url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/SEBANG_Gothic_Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SEBANG_Gothic_Bold';
+    src: local('Sebang/SEBANG Gothic OTF Bold.otf'),
+    url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/SEBANG_Gothic_Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family: 'SEBANG_Gothic_Regular';
+    line-height: 2;
+    margin:0; padding-bottom:300px;
+    background: #564260;
+    background-repeat: no-repeat;
+    word-break: keep-all;
+}
+#bg{
+    font-size: 400px; font-weight: bold;
+    width: 90vw;
+    z-index: -1;
+    position: fixed;
+    top: 50vh; 
+    transform: translate(5%, -50%);
+    text-shadow: #f2dbfd 1px 0 2px;
+    -webkit-text-fill-color: #564260; /* ???? */
+    text-align: center;
+    /*-webkit-text-stroke-width: 0.1px;*/
+    -webkit-text-stroke-color: #a08caa;
+}
+#wrap{
+    width: 70vw; height: auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.switch{
+    width: 55vw; height: 700px;
+    margin-top: 30vh;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #2c1338; 
+    box-shadow: 0 0 10px #220c2c;
+    border-radius: 10px;
+    color: cornsilk;
+}
+.title{
+    color: rgb(247, 204, 66);
+    text-align:center;
+    font-size: 70px; font-weight: bold;
+    width: 70vw; height:100px;
+    position: relative;
+    top: 40px; left: -12%;
+    margin:0; padding: 0;
+}
+p{
+    width: 50vw; height: 200px;
+    text-align: center;
+    float: left;
+    font-size: 20px;
+    margin-left: 5%; margin-top: 100px;
+
+}
+table{
+    position: relative;
+    left: 50%; top:30%; 
+    transform: translate(-50%, -90%);
+    text-align: center;
+    width: 40vw; height: 300px;
+    margin: 0; padding: 0;
+    word-break: keep-all;
+}
+td{font-size: 20px;}
+
+[id^='bar']{
+    width: 30px;
+    margin-left:50%;
+    transform: translateX(-50%);
+}
+
+table, tr, td{border: none;}
+  .middlebox{vertical-align: bottom;}
+
+[id^='bar1']{
+    background-color: #f44336;
+}
+
+  #bar1-1{height: 0px;}
+  #bar1-2{height: 135px;}
+  #bar1-3{height: 0px;}
+  #bar1-4{height: 110px;}
+  #bar1-5{height: 40px;}
+
+[id^='bar2']{
+    background-color: #946629;
+}
+
+#bar2-1{height: 160px;}
+#bar2-2{height: 135px;}
+#bar2-3{height: 102px;}
+#bar2-4{height: 111px;}
+#bar2-5{height: 90px;}
+
+[id^='bar3']{
+    background-color: #5dadee;
+}
+
+#bar3-1{height: 155px;}
+#bar3-2{height: 130px;}
+#bar3-3{height: 97.5px;}
+#bar3-4{height: 112px;}
+#bar3-5{height: 150px;}
+
+[id^='bar4']{
+    background-color: #707070;
+}
+
+#bar4-1{height: 0px;}
+#bar4-2{height: 165px;}
+#bar4-3{height: 0px;}
+#bar4-4{height: 110px;}
+#bar4-5{height: 40px;}
+
+
+
+.banner{
+    width: 55vw; height: 150px;
+    margin-top: 34vh;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(238, 221, 167); 
+    border-radius: 10px;
+    padding: 0;
+}
+
+.banner p{
+    width: 50vw; height: auto;
+    text-align: left;
+    float: left;
+    font-size: 15px;
+    margin:20px 5%; padding: 0;
+    color: #220c2c;
+}
+
+@media screen and (max-width:1500px) and (min-width:1201px){
+    .banner{height: 180px;}
+}
+
+  @media screen and (max-width:1200px) and (min-width:801px){
+    #bg{
+        font-size: 150px;
+        width: 90vw;
+        position: fixed;
+        left: 50vw; top: 50vh;
+        transform: translate(-50%, -50%);
+    }
+    
+    .title{font-size: 50px;}
+    td, p{font-size: 15px;}
+
+    .banner{height: 180px;}
+    
+    .banner p{
+        height: auto;
+        text-align: left;
+        float: left;
+        font-size: 13px;
+        margin:20px 5%; padding: 0;
+        color: #220c2c;
+    }
+  }
+  @media screen and (max-width:800px) {
+    #bg{
+        font-size: 100px;
+        width: 90vw;
+        position: fixed;
+        left: 50vw; top: 50vh;
+        transform: translate(-50%, -50%);
+    }
+    
+    .title{font-size: 40px;}
+    td, p{font-size: 12px;}
+    [id^='bar']{
+        width: 20px;
+        margin-left:50%;
+        transform: translateX(-50%);
+    }
+    .banner{height: 220px;}
+    .banner p{font-size: 12px;}
+  }

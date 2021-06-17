@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Setting fade transition and default settings */
+body {
+  color: #000;
+  background-color: #f4f4f4;
+  transition: background-color 1s ease;
+}
+
+/* panel styles */
+.panel {
+  /* min height incase content is higher than window height */
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: sans-serif;
+  /* outline: 10px solid hotpink; */
+  /* turn above on to see the edge of panels */
+}
+
+
+
+/* styling for demo, can ignore */
+body {
+  text-align: center;
+  font-size: 120%;
+  line-height: 1.618;
+}
+h1, h2 {
+  font-size: 3em;
+  letter-spacing: -0.05em;
+  line-height: 1.1;
+}
+p {
+  max-width: 30em;
+  margin-bottom: 1.618em;
+}
+a {
+  color: #4332CF;
+}
+    </style>
+</head>
+<body>
+
+    <div class="panel" data-color="#11cf72">
+      <h2>Violet panel</h2>
+    </div>
+    <div class="panel" data-color="#1da1f2">
+      <h2>Indigo panel</h2>
+    </div>
+    <div class="panel" data-color="#ff3f3f">
+      <h2>Blue panel</h2>
+    </div>
+    <div class="panel" data-color="#ff0099">
+      <h2>Green panel</h2>
+    </div>
+    <div class="panel" data-color="#ff7a00">
+      <h2>Yellow panel</h2>
+    </div>
+
+    <script>
+        var one = "#11cf72",
+        two = "#1da1f2",
+        three = "#ff3f3f",
+        four = "#ff0099",
+        five = "#ff7a00";
+        
+        $(window).on("scroll touchmove", function() {
+        if ($(document).scrollTop() >= $("#one").position().top) {
+        $('body').css('background', $("#one").attr("data-color"));
+        
+        };
+        if ($(document).scrollTop() > $("#two").position().top) {
+        $('body').css('background', $("#two").attr("data-color"))
+        };
+        if ($(document).scrollTop() > $("#three").position().top) {
+        
+        $('body').css('background', $("#three").attr("data-color"))
+        };
+        if ($(document).scrollTop() > $("#four").position().top) {
+        
+        $('body').css('background', $("#four").attr("data-color"))
+        };
+        if ($(document).scrollTop() >= $("#five").position().top) {
+        $('body').css('background', $("#five").attr("data-color"))
+        };
+        });
+    </script>
+</body>
+</html>
