@@ -185,7 +185,7 @@ table, tr, td{border: none;}
         left: 50vw; top: 50vh;
         transform: translate(-50%, -50%);
     }
-    
+      .switch{width: 70vw;}
     .title{font-size: 40px;}
     td, p{font-size: 12px;}
     [id^='bar']{
@@ -198,7 +198,7 @@ table, tr, td{border: none;}
   }
   @media screen and (min-width:800px) and (max-width:400px) {
   .switch{
-    width: 70vw; height: 700px;
+    width: 75vw; height: 700px;
     margin-top: 30vh;
     position: relative;
     left: 50%;
