@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'SEBANG_Gothic_Regular';
+    src: local('Sebang/SEBANG Gothic OTF.otf'),
+    url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/SEBANG_Gothic_Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SEBANG_Gothic_Bold';
+    src: local('Sebang/SEBANG Gothic OTF Bold.otf'),
+    url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/SEBANG_Gothic_Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{width: 100vw; height: calc(100vh+400px);
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    line-height: 2;
+    font-family: 'SEBANG_Gothic_Regular';
+    background: rgb(27, 19, 31);
+    position: relative;
+    color: rgba(252, 229, 216, 0.863);
+    word-break: keep-all;
+
+}
+#title{
+    color: rgb(168, 118, 245);
+    text-align: center;
+    font-size: 60px;
+    margin-top: 200px;
+}
+.wrap{
+    margin:200px 0 0 10vw;
+}
+.container{ 
+    width: 80vw; height: auto;
+    margin: 300px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;   
+}
+.txt-first{
+    flex-wrap: wrap-reverse;
+}
+img{
+    width: 600px; height: 500px;
+}
+
+.txtwrap{
+    width: 500px; height: auto;
+    display: flex;
+    flex-direction: column;
+}
+p{flex-wrap: wrap;}
+
+@media screen and (max-width: 1200px) and (min-width:501px){
+    .wrap{
+        position: absolute;
+        left: 15%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    
+    .container{
+        display: flex; 
+    }
+
+    img{
+        width: 500px; height: 400px;
+    }
+    
+    .txtwrap{
+        margin-top: 100px;
+    }
+    
+}
+
+@media screen and (max-width: 500px){
+    .wrap{
+        position: absolute;
+        left: 10%;
+    }
+    img{
+        width: 300px; height: 250px;
+    }
+    /*h1{ font-size: 25px;}*/
+    .txtwrap{
+        width: 300px; height: auto;
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+}
