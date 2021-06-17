@@ -444,6 +444,7 @@ a{
     width: 350px;*/
     font-size: 15px;
     position: absolute;
+    width:380px; /*-----------------------------------------------------------------------fixed*/
     left: 50%;
     margin:100px 0 0 -175px;
 }
